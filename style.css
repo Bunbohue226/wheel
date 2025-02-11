@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #111;
+    color: white;
+    height: 100vh;
+  }
+  
+  #wheelContainer {
+    width: 60%;
+    position: relative;
+    margin: auto;
+  }
+  
+  canvas {
+    display: block;
+    margin: auto;
+    border: 3px solid white;
+    border-radius: 50%;
+  }
+  
+  #pointer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid rgb(122, 12, 95);
+  }
+  
+  #winner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 5px black;
+    display: none;
+  }
+  
+  #controls {
+    width: 40%;
+    padding: 20px;
+    background-color: #222;
+    border-left: 2px solid #444;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 200px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #wheelImage {
+    margin-top: 20px;
+    display: none;
+    border: 2px solid white;
+  }
+  
